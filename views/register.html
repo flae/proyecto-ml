@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/register.css">
+    <!--<link rel="stylesheet" href="/css/normalize.css">-->
+    <!-- Libraries-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css" 
+    integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg==" 
+    crossorigin="anonymous" />
+    <title>Mercadoliebre - Register</title>
+</head>
+<body>
+    <header class="main-header">
+      <section class="cajatop"> 
+            <!--logo -->
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="logo" width="30%"/>
+            </div> 
+            <!--barra de busqueda -->
+            <form class="nav-search" action="#" method="POST" enctype="multipart/form-data">
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar productos, marcas" class="nav-search">
+                <button type="submit" class="nav-search-btn">
+                <div aria-label="Buscar" class="nav-icon-search"><i class="fas fa-search"></i></div></button>
+            </form>
+                <!--Mjs -->
+            <div class="texto">
+                <h2>
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito         
+                </h2>
+            </div>
+      </section> 
+       <!--barra de navegacion -->
+        <nav class="main-navbar"> 
+        <ul class="flex-container-left"> 
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>            
+        </ul>   
+        <ul class="flex-container-right"> 
+            <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+       
+        <!--Menu hamburguesa -->
+        <div class="burger-menu">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>        
+        <!--Enlaces a redes sociales -->
+        
+    </header>
+
+    <main>
+        <!--banner -->
+        <div class="banner">
+            <img src="images/img-home-banner.jpg" alt="banner" class="banner">
+        </div>
+        <!-- Formulario de Registro-->   
+        
+        <form action="/registro" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <label for="nombre">Nombre </label>
+                <input type="text" name="nombre" id="nombre">
+            </fieldset>
+
+            <fieldset>
+                <label for="apellido">Apellido </label>
+                <input type="text" name="apellido" id="apellido">
+            </fieldset>
+
+            <fieldset>
+                <label for="usuario">Nombre de usuario </label>
+                <input type="text" name="usuario" id="usuario"> 
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+
+           <fieldset>
+                <label for="fecha">Fecha de nacimiento </label>
+                <input type="date" name="fecha" value="2021-07-22" min="2018-01-01" max="2022-12-31">
+           </fieldset>
+
+            <fieldset>
+                <label for="domicilio">Domicilio </label>
+                <input type="text" name="domicilio" id="domicilio">
+            </fieldset>
+
+            <fieldset class="perfil">
+                <label for="perfil">Perfil de Usuario</label>
+                <input type="radio" name="perfil" value="Comprador">
+                <input type="radio" name="perfil" value="Vendedor" checked>
+            </fieldset>
+            
+            <fieldset class="intereses">
+                <label for="intereses">Intereses:</label>
+                <input type="checkbox" name="intereses" value="Electro">
+                <label for="intereses">Electro</label>
+                <input type="checkbox" name="intereses" value="Moda">
+                <label for="intereses">Moda</label>
+                <input type="checkbox" name="intereses" value="Hogar">
+                <label for="intereses">Hogar</label>
+                <input type="checkbox" name="intereses" value="Juguetería">
+                <label for="intereses">Juguetería</label>
+                <input type="checkbox" name="intereses" value="Vida Sana">
+                <label for="intereses">Vida Sana</label>
+            </fieldset>
+        </form>
+   </main>
+
+
+   <footer>
+         
+   </footer>  
+
+</body>
+</html>

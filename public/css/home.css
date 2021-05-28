@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/*Paleta de colores que deberian estar
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+* {
+  box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+/*========== header ============== */
+.main-header{
+  background-color: #EAC926;
+  padding: 20px;
+}
+
+div img{
+  width: 200px;
+}
+header section form span{
+  background-color: white;
+  border: solid 1px #666;
+}
+.texto {
+  font-weight: 500;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.nav-search {
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  border: solid 1px white;
+  padding: 5px;
+  width: 300px;
+}
+.nav-search-btn{
+  text-align: center;
+  background-color: white;
+  border: solid 1px white;
+  color: #666;
+}
+.main-navbar {
+  display: none; /*oculto lista de menu*/
+}
+.main-navbar ul {
+  margin-bottom: 10px;
+  padding: 0;
+  list-style-type: none;
+} 
+.main-navbar a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+.burger-menu {
+  background-color: #03264C;
+  color: #FFF;
+  font-size: 1.5em;
+  width: 50px;
+  display: block;
+  margin: auto;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.fa-bars{
+  color: white;
+}
+
+/* ======== main =========== */
+
+main{
+  display: block;
+  width: 100%;
+
+}
+
+main section article {
+  background-color: #FFF;
+}
+
+main section article span .envio i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+ }
+ 
+ .envio{
+  float: right;
+  padding-right: 10px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.fa-truck{
+  color: #39b54a;
+  border-radius: 50%;
+  border: 2px solid #39b54a;
+  padding: 15px;
+  
+}
+main section article figure img {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  
+}
+main section h2 .titular {
+  font-size: 24px;
+  font-family: 'Roboto';
+}
+
+h1,h2,h3 {
+  font-family: 'Roboto';
+}
+
+main section article .producto{
+  background-color: #ebebeb;
+  border: solid 1px #ebebeb;
+  margin: 15px;
+  
+}
+
+main section article .precio{
+  padding-left: 10px;
+  font-size: 18px;
+  color:#666;
+}
+main section article .descuento{
+  font-size: 16px;
+  color: #39b54a;
+  padding-left: 10px;
+}
+
+main section article .descripcion{
+  color:#666;
+  font-size: 16px;
+  padding-left: 10px;
+}
+/*============ Footer ==============*/
+footer{
+  padding-top: 20px;
+  align-content: center;
+  background-color: white;
+}
+.PiePagina{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.itemfooter{
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.fa-credit-card {
+  color: #03264C;
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+.fa-gift{
+  color: #03264C;
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+.fa-user-shield{
+  color: #03264C;
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+.copyright{
+  text-align: left;
+  font-size: 12px;
+}
+
+/*============= aplicando medias ============== */
+
+/* ========== Celus =========================== */
+
+
+@media only screen and (max-width: 600px){
+  body {
+    background-color: #ebebeb;
+    max-width: 90%;
+    margin: auto;
+  }
+  nav{
+    display: none;
+  }
+
+  .descripcion{
+    display:none;
+}
+}
+
+/* ========== tablet ========================== */
+/*Dispositivos mas chicos (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+ .burger-menu {
+    display: none;
+  }
+  .cajatop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .texto{
+    max-width: 300px;
+    text-align: right;
+  }
+  .nav-search {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
+  .nav-search {
+    display: flex;
+    max-height: 50px;
+  }
+
+ .producto{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+}
+/*Dispositivos medios (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 768px) {
+
+}
+/* ========== Desktop ========================== */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
