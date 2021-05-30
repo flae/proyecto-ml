@@ -81,11 +81,13 @@ header section form span{
 main{
   display: block;
   width: 100%;
-
 }
-
+main section {
+  padding: 10px;
+}
 main section article {
   background-color: #FFF;
+  padding-bottom: 15px;
 }
 
 main section article span .envio i{
@@ -103,29 +105,30 @@ main section article span .envio i{
  }
  
  .envio{
-  float: right;
-  padding-right: 10px;
+  float: right; 
   margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+  padding: 5px;
 }
 .fa-truck{
   color: #39b54a;
   border-radius: 50%;
   border: 2px solid #39b54a;
-  padding: 15px;
+  padding: 10px;
   
 }
 main section article figure img {
-  width: 100%;
+  width: 90%;
+ 
 }
 .banner {
   width: 100%;
   
 }
-main section h2 .titular {
+.titular {
   font-size: 24px;
   font-family: 'Roboto';
+  margin-left: 20px;
+  color: #222222;
 }
 
 h1,h2,h3 {
@@ -135,8 +138,7 @@ h1,h2,h3 {
 main section article .producto{
   background-color: #ebebeb;
   border: solid 1px #ebebeb;
-  margin: 15px;
-  
+  margin: 0px 10px;
 }
 
 main section article .precio{
@@ -155,45 +157,44 @@ main section article .descripcion{
   font-size: 16px;
   padding-left: 10px;
 }
+
 /*============ Footer ==============*/
 footer{
-  padding-top: 20px;
+  padding: 20px 10px;
   align-content: center;
   background-color: white;
 }
-.PiePagina{
-    text-align: center;
-    font-size: 1em;
-    margin-bottom: 10px;
-    padding: 0;
-}
+
 .itemfooter{
-  font-weight: bold;
-  font-size: 2em;
   text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #222222;
 }
 
 .fa-credit-card {
-  color: #03264C;
+  color: blue;
   font-size: 2em;
   margin-bottom: 2px;
 }
 .fa-gift{
-  color: #03264C;
+  color: blue;
   font-size: 2em;
   margin-bottom: 2px;
 }
 .fa-user-shield{
-  color: #03264C;
+  color: blue;
   font-size: 2em;
   margin-bottom: 2px;
 }
-.copyright{
+.Copyright{
   text-align: left;
-  font-size: 12px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #222222;
 }
 
-/*============= aplicando medias ============== */
+/*============= aplicando @medias ============== */
 
 /* ========== Celus =========================== */
 
@@ -201,16 +202,17 @@ footer{
 @media only screen and (max-width: 600px){
   body {
     background-color: #ebebeb;
-    max-width: 90%;
+    /*max-width: 90%;*/
     margin: auto;
   }
   nav{
     display: none;
   }
-
+    
   .descripcion{
     display:none;
-}
+  }
+
 }
 
 /* ========== tablet ========================== */
@@ -245,18 +247,62 @@ footer{
   .nav-search {
     display: flex;
     max-height: 50px;
-  }
-
+  } 
  .producto{
-  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  box-shadow: 0px 0px 5px rgba(100, 100, 100, 100);  
  }
+
 }
 /*Dispositivos medios (portrait tablets and large phones, 600px and up)*/
 @media only screen and (min-width: 768px) {
-
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+       
+  }
+  main section article {
+    flex: 50%;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .precio{
+    display: inline-flex;
+  }
+  .descuento{
+    display: inline-flex;
+  }
 }
 /* ========== Desktop ========================== */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  main section article {
+    flex: 20%;
+    margin: 10px;    
+  }
+  .precio{
+    display: inline-flex;
+  }
+  .descuento{
+    display: inline-flex;
+  }
   
-}
+  footer{
+    padding: 20px 0;
+
+  }
+  .itemfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex: 50%;
+    font-size: 1em;
+  }
+  .copyright{
+    display: block;
+    font-size: 1em;
+   
+  }
+ }
