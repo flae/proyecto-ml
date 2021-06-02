@@ -110,10 +110,17 @@ main section article span .envio i{
   padding: 5px;
 }
 .fa-truck{
-  color: #39b54a;
-  border-radius: 50%;
-  border: 2px solid #39b54a;
-  padding: 10px;
+  font-size: 16px;
+    color: #39b54a;
+    border-radius: 50%; 
+    border: solid 0.5px #39b54a;
+    width:30px;
+    height:30px;
+    padding: 5px; 
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+    float: right;  
   
 }
 main section article figure img {
