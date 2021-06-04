@@ -24,7 +24,7 @@
             <form class="nav-search" action="#" method="POST" enctype="multipart/form-data">
                 <input type="text" name="buscar" id="buscar" placeholder="Buscar productos, marcas" class="nav-search">
                 <button type="submit" class="nav-search-btn">
-                <div aria-label="Buscar" class="nav-icon-search"><i class="fas fa-search"></i></div></button>
+                <div class="nav-icon-search"><i class="fas fa-search"></i></div></button>
             </form>
                 <!--Mjs -->
             <div class="texto">
@@ -65,19 +65,24 @@
         <!-- Formulario de Registro-->   
         
         <form action="/registro" method="POST" enctype="multipart/form-data">
+            <div class="cajaform">
+                <h1>Registro de MercadoLiebre</h1>
             <fieldset>
                 <label for="nombre">Nombre </label>
-                <input type="text" name="nombre" id="nombre">
+                <input type="text" name="nombre" id="nombre" required minlength="2" maxlength="6">
+         <span class="validity"></span>
             </fieldset>
 
             <fieldset>
                 <label for="apellido">Apellido </label>
-                <input type="text" name="apellido" id="apellido">
+                <input type="text" name="apellido" id="apellido" required minlength="2" maxlength="6">
+                <span class="validity"></span>
             </fieldset>
 
             <fieldset>
                 <label for="usuario">Nombre de usuario </label>
-                <input type="text" name="usuario" id="usuario"> 
+                <input type="text" name="usuario" id="usuario" required minlength="2" maxlength="6">
+                <span class="validity"></span> 
             </fieldset>
 
             <fieldset>
@@ -97,8 +102,10 @@
 
             <fieldset class="perfil">
                 <label for="perfil">Perfil de Usuario</label>
-                <input type="radio" name="perfil" value="Comprador">
-                <input type="radio" name="perfil" value="Vendedor" checked>
+                <label for="perfil">Comprador</label>
+                <input type="radio" name="perfil" value="Comprador" id="comprador">
+                <label for="perfil">Vendedor</label>
+                <input type="radio" name="perfil" value="Vendedor" id ="vendedor" checked>
             </fieldset>
             
             <fieldset class="intereses">
@@ -114,13 +121,58 @@
                 <input type="checkbox" name="intereses" value="Vida Sana">
                 <label for="intereses">Vida Sana</label>
             </fieldset>
+
+            
+            <fieldset>
+                <label for="fotousuario">Foto de Usuario </label>
+                <input type="file" name="fotousuario" id="fotousuario">
+            </fieldset>
+            <fieldset>
+                <label for="contraseña">Contraseña </label>
+                <input type="password" name="contraseña" id="contraseña" required minlength="2" maxlength="10">
+                <span class="validity"></span>
+            </fieldset>
+            <fieldset>
+                <label for="confirmarcontraseña">Confirmar contraseña</label>
+                <input type="password" name="confirmarcontraseña" id="confirmarcontraseña" required minlength="2" maxlength="10">
+                <span class="validity"></span>
+            </fieldset>
+            <fieldset>
+                <button type="button" onclick="alert('queres resetear tu msj?')">Borrar</button>
+                <button type="button"><a href="home.html">Enviar</a> </button>
+            </fieldset>
+        </div>
         </form>
+        
    </main>
 
 
    <footer>
-         
+    <div class="itemfooter">      
+        <article>
+            <i class="fas fa-credit-card"></i>
+            <p class="itemfooter"><b>Pagá con tarjeta o en efectivo</b></p>
+            <p> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </article>            
+        <article>
+            <i class="fas fa-gift"></i>
+            <p class="itemfooter"><b>Envío gratis desde $ 2.500</b></p>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article>
+            <i class="fas fa-user-shield"></i>
+            <p class="itemfooter"><b>Seguridad, de principio a fin</b></p>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </article>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </div> 
    </footer>  
 
+
+   
 </body>
 </html>
