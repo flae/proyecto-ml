@@ -186,12 +186,17 @@ input[type=file] {
     display: inline-block;    
 }
 
-.intereses,.checkbox {
+.intereses {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0px;
 }
-
+input [type=checkbox] {
+   display: flex;
+   flex-direction: column;
+   margin: 0px;
+}
 button {
   font-family: 'Roboto';
   font-size: 14px;
@@ -249,11 +254,12 @@ footer{
   margin-bottom: 10px;
   color: #222222;
 }
+
+
 /*============= aplicando @medias ============== */
 
 /* ========== Celus =========================== */
-
-
+ 
 @media only screen and (max-width: 600px){
   body {
     background-color: #ebebeb;
@@ -262,11 +268,46 @@ footer{
   }
   nav{
     display: none;
-  }    
+  }
+  .main-header{
+    background-color: #EAC926;
+   display: block;
+    vertical-align: middle;
+  }
+  
+  .banner{
+    max-width: 100%;
+    margin: auto;
+  } 
+  .nav-search {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+  }
+  .texto{
+    max-width: 200px;
+    text-align: right;
+  }
+  main form{
+    background-color: white;
+  }
+  input {
+    border: solid 1px rgb(233, 233, 233);
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 10px 0px;
+  }
+  .cajaform {
+    margin: 10px 0px
+  }
 }
 
 /* ========== tablet ========================== */
 /*Dispositivos mas chicos (portrait tablets and large phones, 600px and up)*/
+
 @media only screen and (min-width: 600px) {
  .burger-menu {
     display: none;
@@ -298,34 +339,47 @@ footer{
     display: flex;
     max-height: 50px;
   } 
- 
+  main form{
+    background-color: white;
+  }
+  input {
+    border: solid 1px rgb(233, 233, 233);
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 10px 0px;
+  }
+  .cajaform {
+    margin: 10px 0px
+  }
+  input[type="checkbox" i] {
+    text-align: center;
+    margin-left: 200px;
+  }
 
 }
 /*Dispositivos medios (portrait tablets and large phones, 600px and up)*/
 @media only screen and (min-width: 768px) {
-  main section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-       
+  main form{
+    background-color: white;
+    max-width: 100%;
   }
-  main section article {
-    flex: 50%;
-    box-sizing: border-box;
-    vertical-align: middle;
+  .cajaform{
+    margin: auto;
+  }
+  input[type="checkbox" i] {
+    text-align: center;
+    margin-left: 200px;
   }
  
 }
 /* ========== Desktop ========================== */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  main section article {
-    flex: 20%;
-    margin: 10px;    
+
+  input[type="checkbox" i] {
+    text-align: center;
+    margin-left: 200px;
   }
-  
-  
   footer{
     padding: 20px 0;
 
