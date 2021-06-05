@@ -185,9 +185,11 @@ input[type=file] {
 .perfil {
     display: inline-block;    
 }
-.checkbox {
-  display: flex;
 
+.intereses,.checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 button {
