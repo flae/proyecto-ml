@@ -340,8 +340,10 @@ footer{
     max-width: 80%;
     margin: 10px 0px;
   }
-  .cajaform {
-    margin: 10px 0px
+  .cajaform{
+    margin: auto;
+    width: 600px;
+    background-color: white;
   }
 
 }
@@ -353,6 +355,8 @@ footer{
   }
   .cajaform{
     margin: auto;
+    width: 600px;
+    background-color: white;
   }
  
 }
@@ -360,7 +364,12 @@ footer{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-  
+  .cajaform{
+    margin: auto;
+    width: 600px;
+    background-color: white;
+  }
+
   footer{
     padding: 20px 0;
 

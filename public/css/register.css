@@ -359,12 +359,13 @@ footer{
 }
 /*Dispositivos medios (portrait tablets and large phones, 600px and up)*/
 @media only screen and (min-width: 768px) {
-  main form{
-    background-color: white;
+  main form{    
     max-width: 100%;
   }
   .cajaform{
     margin: auto;
+    width: 600px;
+    background-color: white;
   }
   input[type="checkbox" i] {
     text-align: center;
@@ -375,7 +376,11 @@ footer{
 /* ========== Desktop ========================== */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .cajaform{
+    margin: auto;
+    width: 600px;
+    background-color: white;
+  }
   input[type="checkbox" i] {
     text-align: center;
     margin-left: 200px;
