@@ -247,7 +247,6 @@ footer{
   margin-bottom: 10px;
   color: #222222;
 }
-
 /*============= aplicando @medias ============== */
 
 /* ========== Celus =========================== */
@@ -261,13 +260,7 @@ footer{
   }
   nav{
     display: none;
-  }
-    
-  input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-
+  }    
 }
 
 /* ========== tablet ========================== */
@@ -289,7 +282,16 @@ footer{
     justify-content: center;
     width: auto;
   }
-  
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-navbar ul {
+    display: flex;
+  }
+  .main-navbar li {
+    margin: 0 5px;
+  }
   .nav-search {
     display: flex;
     max-height: 50px;
@@ -320,12 +322,7 @@ footer{
     flex: 20%;
     margin: 10px;    
   }
-  .precio{
-    display: inline-flex;
-  }
-  .descuento{
-    display: inline-flex;
-  }
+  
   
   footer{
     padding: 20px 0;
